@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1514488908,
-    'checksum' => 'ffcb8e38a838e7e58105c906d71297c5',
+    'timestamp' => 1514552749,
+    'checksum' => 'ed403ea8a6d383274049b60ff9cdbb90',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
@@ -50,6 +50,14 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
                 'modified' => 1512519614
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/blueprints.yaml',
+                'modified' => 1514539429
+            ],
+            'plugins/shortcode-owl-carousel' => [
+                'file' => 'user/plugins/shortcode-owl-carousel/blueprints.yaml',
+                'modified' => 1514539436
             ]
         ]
     ],
@@ -3223,6 +3231,142 @@ return [
                 ],
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
+            ],
+            'plugins.shortcode-core' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.shortcode-core.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin Enabled',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.active' => [
+                'type' => 'toggle',
+                'label' => 'Activated',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.active',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.active_admin' => [
+                'type' => 'toggle',
+                'label' => 'Activated in admin',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.active_admin',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.parser' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'classes' => 'fancy',
+                'label' => 'Processor',
+                'options' => [
+                    'wordpress' => 'WordpressParser',
+                    'regex' => 'RegexParser',
+                    'regular' => 'RegularParser'
+                ],
+                'name' => 'plugins.shortcode-core.parser',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.custom_shortcodes' => [
+                'type' => 'text',
+                'label' => 'Custom Shortcodes',
+                'size' => 'large',
+                'name' => 'plugins.shortcode-core.custom_shortcodes',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.fontawesome' => [
+                'type' => '_parent',
+                'name' => 'plugins.shortcode-core.fontawesome',
+                'form_field' => false
+            ],
+            'plugins.shortcode-core.fontawesome.load' => [
+                'type' => 'toggle',
+                'label' => 'Load Fontawesome Library',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.fontawesome.load',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.fontawesome.url' => [
+                'type' => 'text',
+                'label' => 'Fontawesome URL',
+                'size' => 'large',
+                'name' => 'plugins.shortcode-core.fontawesome.url',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-owl-carousel' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.shortcode-owl-carousel.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin Enabled',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-owl-carousel.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-owl-carousel.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'Use Built-in CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-owl-carousel.built_in_css',
+                'validation' => 'strict'
             ]
         ],
         'rules' => [
@@ -3590,6 +3734,21 @@ return [
                 'problems' => [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
+                ],
+                'shortcode-core' => [
+                    'enabled' => 'plugins.shortcode-core.enabled',
+                    'active' => 'plugins.shortcode-core.active',
+                    'active_admin' => 'plugins.shortcode-core.active_admin',
+                    'parser' => 'plugins.shortcode-core.parser',
+                    'custom_shortcodes' => 'plugins.shortcode-core.custom_shortcodes',
+                    'fontawesome' => [
+                        'load' => 'plugins.shortcode-core.fontawesome.load',
+                        'url' => 'plugins.shortcode-core.fontawesome.url'
+                    ]
+                ],
+                'shortcode-owl-carousel' => [
+                    'enabled' => 'plugins.shortcode-owl-carousel.enabled',
+                    'built_in_css' => 'plugins.shortcode-owl-carousel.built_in_css'
                 ]
             ]
         ],

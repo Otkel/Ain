@@ -5,39 +5,39 @@ $dropdown-color: #f6f6f6;
 	@extend .default-animation;
 	@extend .padding-horiz;
 	position: static; // was fixed
-	z-index: 10;
+	z-index: 1;
 	width: 100%;
 	height: $header-height;
 	background-color: rgba(255,255,255,0.90);
 	box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15);
 
 	// scroll based changes
-	&.scrolled {
-		height: $header-height - 2rem;
-		background-color: rgba(255,255,255,0.90) !important;
-		box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15) !important;
-
-		#logo h3 {
-			color: $core-text !important;
-			font-size: 1.6rem !important;
-		}
-		#logo a, #navbar span {
-			color: $core-text !important;
-		}
-		#navbar a {
-			color: $core-accent !important;
-            &:hover {
-                color: darken($core-accent, 20%) !important;
-            }
-		}
-		#navbar a:before, #navbar a:after {
-			background-color: $core-accent !important;
-		}
-
-		.navigation {
-			margin-top: 0.5rem !important;
-		}
-	}
+	//&.scrolled {
+	//	height: $header-height - 2rem;
+	//	background-color: rgba(255,255,255,0.90) !important;
+	//	box-shadow: 0 0.05rem 1rem rgba(0,0,0, 0.15) !important;
+    //
+	//	#logo h3 {
+	//		color: $core-text !important;
+	//		font-size: 1.6rem !important;
+	//	}
+	//	#logo a, #navbar span {
+	//		color: $core-text !important;
+	//	}
+	//	#navbar a {
+	//		color: $core-accent !important;
+     //       &:hover {
+     //           color: darken($core-accent, 20%) !important;
+     //       }
+	//	}
+	//	#navbar a:before, #navbar a:after {
+	//		background-color: $core-accent !important;
+	//	}
+    //
+	//	.navigation {
+	//		margin-top: 0.5rem !important;
+	//	}
+	//}
 
 	// set heights for vertical centering
 	> .grid, #logo, #navbar {

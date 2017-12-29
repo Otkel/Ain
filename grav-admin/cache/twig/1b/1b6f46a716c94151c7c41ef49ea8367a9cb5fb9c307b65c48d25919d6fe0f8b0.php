@@ -67,30 +67,30 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
         ";
         // line 58
         $this->displayBlock('header', $context, $blocks);
-        // line 75
+        // line 72
         echo "
         ";
-        // line 76
+        // line 73
         $this->displayBlock('showcase', $context, $blocks);
-        // line 77
+        // line 74
         echo "
         ";
-        // line 78
+        // line 75
         $this->displayBlock('body', $context, $blocks);
-        // line 83
+        // line 80
         echo "
         ";
-        // line 84
+        // line 81
         $this->displayBlock('footer', $context, $blocks);
-        // line 92
+        // line 117
         echo "    </div>
     ";
-        // line 93
+        // line 118
         $this->displayBlock('sidebar_navigation', $context, $blocks);
-        // line 100
+        // line 125
         echo "    ";
         $this->displayBlock('bottom', $context, $blocks);
-        // line 113
+        // line 138
         echo "</body>
 </html>
 ";
@@ -215,109 +215,129 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
     {
         // line 59
         echo "        <header id=\"header\">
-            <div id=\"logo\">
-                <h3><a href=\"";
-        // line 61
-        echo (((($context["base_url"] ?? null) == "")) ? ("/") : (($context["base_url"] ?? null)));
-        echo "\">";
-        echo $this->getAttribute($this->getAttribute(($context["config"] ?? null), "site", array()), "title", array());
-        echo "</a></h3>
-            </div>
             <div id=\"navbar\">
                 ";
-        // line 64
+        // line 61
         $this->displayBlock('header_extra', $context, $blocks);
-        // line 65
+        // line 62
         echo "                ";
         if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", array()), "langswitcher", array()), "enabled", array())) {
-            // line 66
+            // line 63
             echo "                ";
-            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 66)->display($context);
-            // line 67
+            $this->loadTemplate("partials/langswitcher.html.twig", "partials/base.html.twig", 63)->display($context);
+            // line 64
             echo "                ";
         }
-        // line 68
+        // line 65
         echo "                ";
         $this->displayBlock('header_navigation', $context, $blocks);
-        // line 71
+        // line 68
         echo "                <span class=\"panel-activation sb-toggle-left navbar-left menu-btn fa fa-bars\"></span>
             </div>
         </header>
         ";
     }
 
-    // line 64
+    // line 61
     public function block_header_extra($context, array $blocks = array())
     {
     }
 
-    // line 68
+    // line 65
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 69
+        // line 66
         echo "                ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 69)->display($context);
-        // line 70
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 66)->display($context);
+        // line 67
         echo "                ";
     }
 
-    // line 76
+    // line 73
     public function block_showcase($context, array $blocks = array())
     {
     }
 
-    // line 78
+    // line 75
     public function block_body($context, array $blocks = array())
     {
-        // line 79
+        // line 76
         echo "        <section id=\"body\" class=\"";
         echo ($context["class"] ?? null);
         echo "\">
             ";
-        // line 80
+        // line 77
         $this->displayBlock('content', $context, $blocks);
-        // line 81
+        // line 78
         echo "        </section>
         ";
     }
 
-    // line 80
+    // line 77
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 84
+    // line 81
     public function block_footer($context, array $blocks = array())
     {
-        // line 85
+        // line 82
         echo "        <footer id=\"footer\">
-            <div class=\"totop\">
-                <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
+            <div class=\"eightyWidth fullHeight flexCenter\">
+                <div class=\"fourtyWidth fullHeight\">
+                    <div>
+                        <p>АДРЕС:</p>
+                        <p>г. Алматы, </p>
+                        <p>ул. Маркова 61/1, </p>
+                        <p>БЦ \"Гарант\", офис 301</p>
+                    </div>
+                    <div>
+                        <p>ТЕЛЕФОН:</p>
+                        <a href=\"tel:+7 (727) 357 26 06\">+7 (727) 357 26 06</a>
+                    </div>
+                </div>
+                <div class=\"sixtyWidth fullHeight\">
+                    <h4>ОСТАЛИСЬ ВОПРОСЫ? МЫ ВСЕГДА ГОТОВЫ ПОМОЧЬ</h4>
+                    <div class=\"form-table\">
+                        <div class=\"form-tbody\">
+                            <div class=\"form-item-group group-text\">
+                                <div class=\"form-item form-text name\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Ваше имя: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[0]\" id=\"d[0]\" required=\"\"></div></div><div class=\"form-item form-text phone\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Телефон: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[1]\" id=\"d[1]\" required=\"\"></div></div>
+                            </div>
+                            <div class=\"form-item-group group-textarea\">
+                                <div class=\"form-item form-textarea comments\"><label class=\"form-item__body\"><textarea class=\"wm-input-default\" placeholder=\" Комментарии: \" cols=\"1\" rows=\"1\" name=\"d[2]\" id=\"d[2]\"></textarea></label></div>
+                            </div>
+                        </div>
+                        <div class=\"form-tfoot\">
+                            <div class=\"form-item-group group-button\">
+                                <div class=\"form-submit\"><div class=\"form-item__body\"><button class=\"wm-input-default\" type=\"submit\"><span class=\"align-elem\">Заказать звонок</span></button></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p><a href=\"http://getgrav.org\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by <a href=\"http://www.rockettheme.com\">RocketTheme</a>.</p>
         </footer>
         ";
     }
 
-    // line 93
+    // line 118
     public function block_sidebar_navigation($context, array $blocks = array())
     {
-        // line 94
+        // line 119
         echo "        <div class=\"sb-slidebar sb-left sb-width-thin\">
             <div id=\"panel\">
             ";
-        // line 96
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 96)->display($context);
-        // line 97
+        // line 121
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 121)->display($context);
+        // line 122
         echo "            </div>
         </div>
     ";
     }
 
-    // line 100
+    // line 125
     public function block_bottom($context, array $blocks = array())
     {
-        // line 101
+        // line 126
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -346,7 +366,7 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
 
     public function getDebugInfo()
     {
-        return array (  321 => 101,  318 => 100,  312 => 97,  310 => 96,  306 => 94,  303 => 93,  293 => 85,  290 => 84,  285 => 80,  280 => 81,  278 => 80,  273 => 79,  270 => 78,  265 => 76,  261 => 70,  258 => 69,  255 => 68,  250 => 64,  243 => 71,  240 => 68,  237 => 67,  234 => 66,  231 => 65,  229 => 64,  221 => 61,  217 => 59,  214 => 58,  210 => 36,  207 => 35,  204 => 34,  201 => 33,  198 => 32,  195 => 31,  191 => 28,  188 => 27,  185 => 26,  182 => 25,  179 => 24,  176 => 23,  173 => 22,  170 => 21,  167 => 20,  164 => 19,  161 => 18,  158 => 17,  155 => 16,  152 => 15,  149 => 14,  146 => 13,  138 => 37,  136 => 31,  130 => 29,  128 => 13,  123 => 11,  119 => 10,  116 => 9,  114 => 8,  106 => 7,  103 => 6,  100 => 5,  94 => 113,  91 => 100,  89 => 93,  86 => 92,  84 => 84,  81 => 83,  79 => 78,  76 => 77,  74 => 76,  71 => 75,  69 => 58,  53 => 45,  46 => 41,  43 => 40,  41 => 5,  36 => 3,  33 => 2,  31 => 1,);
+        return array (  341 => 126,  338 => 125,  332 => 122,  330 => 121,  326 => 119,  323 => 118,  285 => 82,  282 => 81,  277 => 77,  272 => 78,  270 => 77,  265 => 76,  262 => 75,  257 => 73,  253 => 67,  250 => 66,  247 => 65,  242 => 61,  235 => 68,  232 => 65,  229 => 64,  226 => 63,  223 => 62,  221 => 61,  217 => 59,  214 => 58,  210 => 36,  207 => 35,  204 => 34,  201 => 33,  198 => 32,  195 => 31,  191 => 28,  188 => 27,  185 => 26,  182 => 25,  179 => 24,  176 => 23,  173 => 22,  170 => 21,  167 => 20,  164 => 19,  161 => 18,  158 => 17,  155 => 16,  152 => 15,  149 => 14,  146 => 13,  138 => 37,  136 => 31,  130 => 29,  128 => 13,  123 => 11,  119 => 10,  116 => 9,  114 => 8,  106 => 7,  103 => 6,  100 => 5,  94 => 138,  91 => 125,  89 => 118,  86 => 117,  84 => 81,  81 => 80,  79 => 75,  76 => 74,  74 => 73,  71 => 72,  69 => 58,  53 => 45,  46 => 41,  43 => 40,  41 => 5,  36 => 3,  33 => 2,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -418,9 +438,6 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
     <div id=\"sb-site\">
         {% block header %}
         <header id=\"header\">
-            <div id=\"logo\">
-                <h3><a href=\"{{ base_url == '' ? '/' : base_url }}\">{{ config.site.title }}</a></h3>
-            </div>
             <div id=\"navbar\">
                 {% block header_extra %}{% endblock %}
                 {% if config.plugins.langswitcher.enabled %}
@@ -444,10 +461,38 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
 
         {% block footer %}
         <footer id=\"footer\">
-            <div class=\"totop\">
-                <span><a href=\"#\" id=\"toTop\"><i class=\"fa fa-arrow-up\"></i></a></span>
+            <div class=\"eightyWidth fullHeight flexCenter\">
+                <div class=\"fourtyWidth fullHeight\">
+                    <div>
+                        <p>АДРЕС:</p>
+                        <p>г. Алматы, </p>
+                        <p>ул. Маркова 61/1, </p>
+                        <p>БЦ \"Гарант\", офис 301</p>
+                    </div>
+                    <div>
+                        <p>ТЕЛЕФОН:</p>
+                        <a href=\"tel:+7 (727) 357 26 06\">+7 (727) 357 26 06</a>
+                    </div>
+                </div>
+                <div class=\"sixtyWidth fullHeight\">
+                    <h4>ОСТАЛИСЬ ВОПРОСЫ? МЫ ВСЕГДА ГОТОВЫ ПОМОЧЬ</h4>
+                    <div class=\"form-table\">
+                        <div class=\"form-tbody\">
+                            <div class=\"form-item-group group-text\">
+                                <div class=\"form-item form-text name\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Ваше имя: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[0]\" id=\"d[0]\" required=\"\"></div></div><div class=\"form-item form-text phone\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Телефон: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[1]\" id=\"d[1]\" required=\"\"></div></div>
+                            </div>
+                            <div class=\"form-item-group group-textarea\">
+                                <div class=\"form-item form-textarea comments\"><label class=\"form-item__body\"><textarea class=\"wm-input-default\" placeholder=\" Комментарии: \" cols=\"1\" rows=\"1\" name=\"d[2]\" id=\"d[2]\"></textarea></label></div>
+                            </div>
+                        </div>
+                        <div class=\"form-tfoot\">
+                            <div class=\"form-item-group group-button\">
+                                <div class=\"form-submit\"><div class=\"form-item__body\"><button class=\"wm-input-default\" type=\"submit\"><span class=\"align-elem\">Заказать звонок</span></button></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p><a href=\"http://getgrav.org\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart\"></i> by <a href=\"http://www.rockettheme.com\">RocketTheme</a>.</p>
         </footer>
         {% endblock %}
     </div>

@@ -57,9 +57,6 @@
     <div id="sb-site">
         {% block header %}
         <header id="header">
-            <div id="logo">
-                <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
-            </div>
             <div id="navbar">
                 {% block header_extra %}{% endblock %}
                 {% if config.plugins.langswitcher.enabled %}
@@ -83,10 +80,38 @@
 
         {% block footer %}
         <footer id="footer">
-            <div class="totop">
-                <span><a href="#" id="toTop"><i class="fa fa-arrow-up"></i></a></span>
+            <div class="eightyWidth fullHeight flexCenter">
+                <div class="fourtyWidth fullHeight">
+                    <div>
+                        <p>АДРЕС:</p>
+                        <p>г. Алматы, </p>
+                        <p>ул. Маркова 61/1, </p>
+                        <p>БЦ "Гарант", офис 301</p>
+                    </div>
+                    <div>
+                        <p>ТЕЛЕФОН:</p>
+                        <a href="tel:+7 (727) 357 26 06">+7 (727) 357 26 06</a>
+                    </div>
+                </div>
+                <div class="sixtyWidth fullHeight">
+                    <h4>ОСТАЛИСЬ ВОПРОСЫ? МЫ ВСЕГДА ГОТОВЫ ПОМОЧЬ</h4>
+                    <div class="form-table">
+                        <div class="form-tbody">
+                            <div class="form-item-group group-text">
+                                <div class="form-item form-text name"><div class="form-item__body"><input class="wm-input-default" placeholder="* Ваше имя: " type="text" size="1" maxlength="100" value="" name="d[0]" id="d[0]" required=""></div></div><div class="form-item form-text phone"><div class="form-item__body"><input class="wm-input-default" placeholder="* Телефон: " type="text" size="1" maxlength="100" value="" name="d[1]" id="d[1]" required=""></div></div>
+                            </div>
+                            <div class="form-item-group group-textarea">
+                                <div class="form-item form-textarea comments"><label class="form-item__body"><textarea class="wm-input-default" placeholder=" Комментарии: " cols="1" rows="1" name="d[2]" id="d[2]"></textarea></label></div>
+                            </div>
+                        </div>
+                        <div class="form-tfoot">
+                            <div class="form-item-group group-button">
+                                <div class="form-submit"><div class="form-item__body"><button class="wm-input-default" type="submit"><span class="align-elem">Заказать звонок</span></button></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
         </footer>
         {% endblock %}
     </div>

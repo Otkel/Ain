@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1514488908,
-    'checksum' => '2b90e0b3a158a9c6b23248b36b9f02e9',
+    'timestamp' => 1514552749,
+    'checksum' => 'e0fc16038fafcf04fd1f510ec85f4e9c',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1514488897
+                'modified' => 1514552748
             ]
         ],
         'system/config' => [
@@ -72,6 +72,14 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1512519614
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
+                'modified' => 1514539430
+            ],
+            'plugins/shortcode-owl-carousel' => [
+                'file' => 'user/plugins/shortcode-owl-carousel/shortcode-owl-carousel.yaml',
+                'modified' => 1514539437
             ]
         ]
     ],
@@ -243,6 +251,21 @@ return [
                 ]
             ],
             'problems' => [
+                'enabled' => true,
+                'built_in_css' => true
+            ],
+            'shortcode-core' => [
+                'enabled' => true,
+                'active' => true,
+                'active_admin' => true,
+                'parser' => 'regex',
+                'custom_shortcodes' => NULL,
+                'fontawesome' => [
+                    'load' => true,
+                    'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
+                ]
+            ],
+            'shortcode-owl-carousel' => [
                 'enabled' => true,
                 'built_in_css' => true
             ]
