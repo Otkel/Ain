@@ -1,0 +1,11 @@
+email: otkelbaysultan@gmail.com
+fullname: 'Otkelbay '
+title: admin
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$YpMe4EBH8G3BG9/K4RdxBuPkQgbFtu.zqZW5sdLMWB5oo5.QqqFV6

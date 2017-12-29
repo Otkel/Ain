@@ -1,0 +1,6 @@
+.pre-header{
+    max-height: 250px;
+}
+#header{
+    position: static !important;
+}
