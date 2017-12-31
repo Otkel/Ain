@@ -1,0 +1,31 @@
+{% embed 'partials/base.html.twig' %}
+
+	{% set collection = page.collection() %}
+
+	{% block content %}
+		{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}
+
+		{% if blog_image %}
+<div class="flush-top blog-header blog-header-image" style="background-image: url({{ blog_image.url }});">
+    {% else %}
+    <div class="blog-header">
+        {% endif %}
+        {{ page.content }}
+    </div>
+
+    {% if config.plugins.breadcrumbs.enabled %}
+        {% include 'partials/breadcrumbs.html.twig' %}
+    {% endif %}
+
+    <div class="partners-list-wrapper">
+        <ul class="partners-list">
+            {% for child in collection %}
+                <li><a href="{{ child.url }}">{{ child.title }}</a> <br></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endblock %}
+
+    {% endembed %}
+
+
