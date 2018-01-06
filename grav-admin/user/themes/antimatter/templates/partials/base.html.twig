@@ -79,6 +79,18 @@
         </section>
         {% endblock %}
 
+        {% set ideal_solution = block('ideal_solution') %}
+        {% if ideal_solution is not empty %}
+            {{ ideal_solution }}
+        {% endif %}
+        {% set why_choose = block('why_choose') %}
+        {% if why_choose is not empty %}
+            {{ why_choose }}
+        {% endif %}
+        {% set partners_thumbs = block('partners_thumbs') %}
+        {% if partners_thumbs is not empty %}
+            {{ partners_thumbs }}
+        {% endif %}
         {% block footer %}
         <footer id="footer">
             <div class="eightyWidth fullHeight flexCenter">

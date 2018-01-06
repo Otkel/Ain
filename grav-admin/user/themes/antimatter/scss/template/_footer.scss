@@ -1,15 +1,13 @@
 // Footer styling
 #footer {
-	position: absolute;
-	background: #ffffff;
-	height: 300px;
+	background: #922a8f;
+	height: auto;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	@extend .padding-horiz;
 	color: $footer-text;
 	text-align: center;
-
 	a:hover {
 		color: #fff;
 	}

@@ -81,16 +81,52 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
         echo "
         ";
         // line 82
+        $context["ideal_solution"] =         $this->renderBlock("ideal_solution", $context, $blocks);
+        // line 83
+        echo "        ";
+        if ( !twig_test_empty(($context["ideal_solution"] ?? null))) {
+            // line 84
+            echo "            ";
+            echo ($context["ideal_solution"] ?? null);
+            echo "
+        ";
+        }
+        // line 86
+        echo "        ";
+        $context["why_choose"] =         $this->renderBlock("why_choose", $context, $blocks);
+        // line 87
+        echo "        ";
+        if ( !twig_test_empty(($context["why_choose"] ?? null))) {
+            // line 88
+            echo "            ";
+            echo ($context["why_choose"] ?? null);
+            echo "
+        ";
+        }
+        // line 90
+        echo "        ";
+        $context["partners_thumbs"] =         $this->renderBlock("partners_thumbs", $context, $blocks);
+        // line 91
+        echo "        ";
+        if ( !twig_test_empty(($context["partners_thumbs"] ?? null))) {
+            // line 92
+            echo "            ";
+            echo ($context["partners_thumbs"] ?? null);
+            echo "
+        ";
+        }
+        // line 94
+        echo "        ";
         $this->displayBlock('footer', $context, $blocks);
-        // line 118
+        // line 130
         echo "    </div>
     ";
-        // line 119
+        // line 131
         $this->displayBlock('sidebar_navigation', $context, $blocks);
-        // line 126
+        // line 138
         echo "    ";
         $this->displayBlock('bottom', $context, $blocks);
-        // line 139
+        // line 151
         echo "</body>
 </html>
 ";
@@ -281,10 +317,10 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
     {
     }
 
-    // line 82
+    // line 94
     public function block_footer($context, array $blocks = array())
     {
-        // line 83
+        // line 95
         echo "        <footer id=\"footer\">
             <div class=\"eightyWidth fullHeight flexCenter\">
                 <div class=\"fourtyWidth fullHeight\">
@@ -322,25 +358,25 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
         ";
     }
 
-    // line 119
+    // line 131
     public function block_sidebar_navigation($context, array $blocks = array())
     {
-        // line 120
+        // line 132
         echo "        <div class=\"sb-slidebar sb-left sb-width-thin\">
             <div id=\"panel\">
             ";
-        // line 122
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 122)->display($context);
-        // line 123
+        // line 134
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 134)->display($context);
+        // line 135
         echo "            </div>
         </div>
     ";
     }
 
-    // line 126
+    // line 138
     public function block_bottom($context, array $blocks = array())
     {
-        // line 127
+        // line 139
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -369,7 +405,7 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
 
     public function getDebugInfo()
     {
-        return array (  344 => 127,  341 => 126,  335 => 123,  333 => 122,  329 => 120,  326 => 119,  288 => 83,  285 => 82,  280 => 78,  275 => 79,  273 => 78,  268 => 77,  265 => 76,  260 => 74,  256 => 68,  253 => 67,  250 => 66,  245 => 62,  238 => 69,  235 => 66,  232 => 65,  229 => 64,  226 => 63,  224 => 62,  220 => 60,  217 => 59,  213 => 37,  210 => 36,  207 => 35,  204 => 34,  201 => 33,  198 => 32,  194 => 29,  191 => 28,  188 => 27,  185 => 26,  182 => 25,  179 => 24,  176 => 23,  173 => 22,  170 => 21,  167 => 20,  164 => 19,  161 => 18,  158 => 17,  155 => 16,  152 => 15,  149 => 14,  146 => 13,  138 => 38,  136 => 32,  130 => 30,  128 => 13,  123 => 11,  119 => 10,  116 => 9,  114 => 8,  106 => 7,  103 => 6,  100 => 5,  94 => 139,  91 => 126,  89 => 119,  86 => 118,  84 => 82,  81 => 81,  79 => 76,  76 => 75,  74 => 74,  71 => 73,  69 => 59,  53 => 46,  46 => 42,  43 => 41,  41 => 5,  36 => 3,  33 => 2,  31 => 1,);
+        return array (  380 => 139,  377 => 138,  371 => 135,  369 => 134,  365 => 132,  362 => 131,  324 => 95,  321 => 94,  316 => 78,  311 => 79,  309 => 78,  304 => 77,  301 => 76,  296 => 74,  292 => 68,  289 => 67,  286 => 66,  281 => 62,  274 => 69,  271 => 66,  268 => 65,  265 => 64,  262 => 63,  260 => 62,  256 => 60,  253 => 59,  249 => 37,  246 => 36,  243 => 35,  240 => 34,  237 => 33,  234 => 32,  230 => 29,  227 => 28,  224 => 27,  221 => 26,  218 => 25,  215 => 24,  212 => 23,  209 => 22,  206 => 21,  203 => 20,  200 => 19,  197 => 18,  194 => 17,  191 => 16,  188 => 15,  185 => 14,  182 => 13,  174 => 38,  172 => 32,  166 => 30,  164 => 13,  159 => 11,  155 => 10,  152 => 9,  150 => 8,  142 => 7,  139 => 6,  136 => 5,  130 => 151,  127 => 138,  125 => 131,  122 => 130,  119 => 94,  113 => 92,  110 => 91,  107 => 90,  101 => 88,  98 => 87,  95 => 86,  89 => 84,  86 => 83,  84 => 82,  81 => 81,  79 => 76,  76 => 75,  74 => 74,  71 => 73,  69 => 59,  53 => 46,  46 => 42,  43 => 41,  41 => 5,  36 => 3,  33 => 2,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -463,6 +499,18 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
         </section>
         {% endblock %}
 
+        {% set ideal_solution = block('ideal_solution') %}
+        {% if ideal_solution is not empty %}
+            {{ ideal_solution }}
+        {% endif %}
+        {% set why_choose = block('why_choose') %}
+        {% if why_choose is not empty %}
+            {{ why_choose }}
+        {% endif %}
+        {% set partners_thumbs = block('partners_thumbs') %}
+        {% if partners_thumbs is not empty %}
+            {{ partners_thumbs }}
+        {% endif %}
         {% block footer %}
         <footer id=\"footer\">
             <div class=\"eightyWidth fullHeight flexCenter\">

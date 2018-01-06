@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/OpenServer/domains/grav/grav-admin/user/config/system.yaml',
-    'modified' => 1514554164,
+    'modified' => 1515177363,
     'data' => [
         'absolute_urls' => false,
         'home' => [
@@ -44,7 +44,7 @@ return [
             'log' => true
         ],
         'debugger' => [
-            'enabled' => false,
+            'enabled' => true,
             'twig' => true,
             'shutdown' => [
                 'close_connection' => true
