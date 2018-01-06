@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/OpenServer/domains/grav/grav-admin/system/config/system.yaml',
-    'modified' => 1512519614,
+    'modified' => 1515254232,
     'data' => [
         'absolute_urls' => false,
         'timezone' => '',
@@ -18,7 +18,7 @@ return [
         'intl_enabled' => true,
         'languages' => [
             'supported' => [
-                
+                0 => 'ru'
             ],
             'include_default_lang' => true,
             'translations' => true,

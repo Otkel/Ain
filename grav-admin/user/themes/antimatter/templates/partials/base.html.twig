@@ -19,6 +19,7 @@
         {% do assets.addCss('theme://css/slidebars.min.css') %}
         {% do assets.addCss('theme://css/aostyles.css') %}
         {% do assets.addCss('theme://css/styles.css') %}
+        {% do assets.addCss('theme://css/title.styles.css') %}
         {% if browser.getBrowser == 'msie' and browser.getVersion == 10 %}
             {% do assets.addCss('theme://css/nucleus-ie10.css') %}
         {% endif %}
@@ -40,20 +41,79 @@
 {% endblock head %}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
-<div class="pre-header fullWidth flexCenter">
-    <div class="eightyWidth flex-between-center">
-        <div>
-        <img src="{{ url('theme://images/logo-3.png') }}" alt="">
-            <p>УПРАВЛЯЮЩАЯ КОМПАНИЯ</p>
+<div class="wrapper">
+<div class="layout layout_center not-columned layout_center_2_id_2_id_5_0">
+    <div class="layout columned columns-2 layout_2_id_5">
+        <div class="layout column layout_5">
+            <div class="editorElement layer-type-block ui-droppable block-2">
+                <div class="site-name widget-2 widget-type-site_name editorElement layer-type-widget">
+                    <a href="http://aincapital.com"> 						 						 						<div class="sn-wrap">
+                            <div class="sn-logo">
+
+                                <img src="{{ url('theme://images/logo-3.png') }}" alt="">
+
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="site-description widget-3 widget-type-site_description editorElement layer-type-widget">
+
+                    <div class="align-elem">
+                        Управляющая компания
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div>
-            <a href="tel:+7 (727) 357 26 06">+7 (727) 357 26 06</a>
-            <a href="mailto:info@aincapital.com">info@aincapital.com</a>
+        <div class="layout column layout_18">
+            <div class="editorElement layer-type-block ui-droppable block-7">
+                <div class="layout column layout_8">
+                    <div class="editorElement layer-type-block ui-droppable block-3">
+                        <div class="phones-6 widget-4 phones-block contacts-block widget-type-contacts_phone editorElement layer-type-widget">
+                            <div class="inner">
+                                <label class="cell-icon" for="tg-phones-6">
+                                    <div class="icon"></div>
+                                </label>
+                                <input id="tg-phones-6" class="tgl-but" type="checkbox">
+                                <div class="block-body-drop">
+                                    <div class="cell-text">
+                                        <div class="title"><div class="align-elem">Телефон:</div></div>
+                                        <div class="text_body">
+                                            <div class="align-elem">
+                                                <div><a href="tel:+7 (727) 357 26 06">+7 (727) 357 26 06</a></div>													</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="email-36 widget-33 email-block contacts-block widget-type-contacts_email editorElement layer-type-widget">
+                            <div class="inner">
+                                <label class="cell-icon" for="tg-email-36">
+                                    <div class="icon"></div>
+                                </label>
+                                <input id="tg-email-36" class="tgl-but" type="checkbox">
+                                <div class="block-body-drop">
+                                    <div class="cell-text">
+                                        <div class="title"><div class="align-elem">Email:</div></div>
+                                        <div class="text_body">
+                                            <div class="align-elem"><a href="mailto:info@aincapital.com">info@aincapital.com</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="layout column layout_9">
+                    <a class="button-9 widget-6 widget-type-button editorElement layer-type-widget" href="#" data-wr-class="popover-wrap-9"><span>Контакты</span></a><!--widget-6-->
+
+                </div>
+            </div>
         </div>
-        <button class="button button2">
-            Контакты
-        </button>
     </div>
+</div>
 </div>
     <div id="sb-site">
         {% block header %}
@@ -93,37 +153,123 @@
         {% endif %}
         {% block footer %}
         <footer id="footer">
-            <div class="eightyWidth fullHeight flexCenter">
-                <div class="fourtyWidth fullHeight">
-                    <div>
-                        <p>АДРЕС:</p>
-                        <p>г. Алматы, </p>
-                        <p>ул. Маркова 61/1, </p>
-                        <p>БЦ "Гарант", офис 301</p>
-                    </div>
-                    <div>
-                        <p>ТЕЛЕФОН:</p>
-                        <a href="tel:+7 (727) 357 26 06">+7 (727) 357 26 06</a>
-                    </div>
-                </div>
-                <div class="sixtyWidth fullHeight">
-                    <h4>ОСТАЛИСЬ ВОПРОСЫ? МЫ ВСЕГДА ГОТОВЫ ПОМОЧЬ</h4>
-                    <div class="form-table">
-                        <div class="form-tbody">
-                            <div class="form-item-group group-text">
-                                <div class="form-item form-text name"><div class="form-item__body"><input class="wm-input-default" placeholder="* Ваше имя: " type="text" size="1" maxlength="100" value="" name="d[0]" id="d[0]" required=""></div></div><div class="form-item form-text phone"><div class="form-item__body"><input class="wm-input-default" placeholder="* Телефон: " type="text" size="1" maxlength="100" value="" name="d[1]" id="d[1]" required=""></div></div>
-                            </div>
-                            <div class="form-item-group group-textarea">
-                                <div class="form-item form-textarea comments"><label class="form-item__body"><textarea class="wm-input-default" placeholder=" Комментарии: " cols="1" rows="1" name="d[2]" id="d[2]"></textarea></label></div>
+            <div class="wrapper">
+            <div class="editorElement layer-type-block ui-droppable block-9">
+                <div class="layout layout_center not-columned layout_23_id_23_id_27">
+                    <div class="layout columned columns-2 layout_23_id_27">
+                        <div class="layout column layout_27">
+                            <div class="editorElement layer-type-block ui-droppable block-10">
+                                <div class="address-30 widget-20 address-block contacts-block widget-type-contacts_address editorElement layer-type-widget">
+                                    <div class="inner">
+                                        <label class="cell-icon" for="tg30">
+                                            <div class="icon"></div>
+                                        </label>
+                                        <input id="tg30" class="tgl-but" type="checkbox">
+                                        <div class="block-body-drop">
+                                            <div class="cell-text">
+                                                <div class="title"><div class="align-elem">Адрес:</div></div>
+                                                <div class="text_body">
+                                                    <div class="align-elem">г. Алматы, <br>
+                                                        ул. Маркова 61/1, <br>
+                                                        БЦ "Гарант", офис 301</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phones-29 widget-19 phones-block contacts-block widget-type-contacts_phone editorElement layer-type-widget">
+                                    <div class="inner">
+                                        <label class="cell-icon" for="tg-phones-29">
+                                            <div class="icon"></div>
+                                        </label>
+                                        <input id="tg-phones-29" class="tgl-but" type="checkbox">
+                                        <div class="block-body-drop">
+                                            <div class="cell-text">
+                                                <div class="title"><div class="align-elem">Телефон:</div></div>
+                                                <div class="text_body">
+                                                    <div class="align-elem">
+                                                        <div><a href="tel:+7 (727) 357 26 06">+7 (727) 357 26 06</a></div>													</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="site-counters widget-25 widget-type-site_counters editorElement layer-type-widget">
+                                    <!--LiveInternet counter--><script type="text/javascript">
+                                        document.write("<a href='//www.liveinternet.ru/click' "+
+                                            "target=_blank><img src='//counter.yadro.ru/hit?t52.1;r"+
+                                            escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                                                ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                                                screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                                            ";"+Math.random()+
+                                            "' alt='' title='LiveInternet: показано число просмотров и"+
+                                            " посетителей за 24 часа' "+
+                                            "border='0' width='88' height='31'><\/a>")
+                                    </script><a href="//www.liveinternet.ru/click" target="_blank"><img src="//counter.yadro.ru/hit?t52.1;r;s1366*768*24;uhttp%3A//aincapital.com/;0.6655334647081175" alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа" border="0" width="88" height="31"></a><!--/LiveInternet--><!--cms statistics-->
+                                    <script type="text/javascript"><!--
+                                        var megacounter_key="ae66cb5dad02060d2c790390ed41fb08";
+                                        (function(d){
+                                            var s = d.createElement("script");
+                                            s.src = "//counter.megagroup.ru/loader.js?"+new Date().getTime();
+                                            s.async = true;
+                                            d.getElementsByTagName("head")[0].appendChild(s);
+                                        })(document);
+                                        //--></script>
+                                    <!--/cms statistics-->
+                                    <!--__INFO2018-01-05 00:48:13INFO__-->
+
+                                </div>
                             </div>
                         </div>
-                        <div class="form-tfoot">
-                            <div class="form-item-group group-button">
-                                <div class="form-submit"><div class="form-item__body"><button class="wm-input-default" type="submit"><span class="align-elem">Заказать звонок</span></button></div></div>
+                        <div class="layout column layout_26">
+
+
+
+
+                            <div class="form-26 widget-17 vertical_mode widget-type-form_adaptive editorElement layer-type-widget">
+                                <div class="form__header"><div class="align-elem">ОСТАЛИСЬ ВОПРОСЫ? МЫ ВСЕГДА ГОТОВЫ ПОМОЧЬ</div></div>				<div class="form__body" data-api-type="form" data-api-url="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=940405">
+                                    <form method="post">
+                                        <input type="hidden" name="_form_item" value="26">
+                                        <input type="hidden" name="form_id" value="940405">
+                                        <input type="hidden" name="tpl" value="db:title.tpl">
+                                        <div class="form-table">
+                                            <div class="form-tbody">
+                                                <div class="form-item-group group-text">
+                                                    <div class="form-item form-text name"><div class="form-item__body"><input class="wm-input-default" placeholder="* Ваше имя: " type="text" size="1" maxlength="100" value="" name="d[0]" id="d[0]" required=""></div></div><div class="form-item form-text phone"><div class="form-item__body"><input class="wm-input-default" placeholder="* Телефон: " type="text" size="1" maxlength="100" value="" name="d[1]" id="d[1]" required=""></div></div>
+                                                </div>
+                                                <div class="form-item-group group-textarea">
+                                                    <div class="form-item form-textarea comments"><label class="form-item__body"><textarea class="wm-input-default" placeholder=" Комментарии: " cols="1" rows="1" name="d[2]" id="d[2]"></textarea></label></div>
+                                                </div>
+                                            </div>
+                                            <div class="form-tfoot">
+                                                <div class="form-item-group group-button">
+                                                    <div class="form-submit"><div class="form-item__body"><button class="wm-input-default" type="submit"><span class="align-elem">Заказать звонок</span></button></div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
+                            <script src="/shared/misc/calendar.gen.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+
+                        </div>
+                    </div>
+                    <div class="layout layout_23_id_25">
+                        <div class="site-copyright widget-16 widget-type-site_copyright editorElement layer-type-widget">
+
+                            <div class="align-elem">
+                                Copyright © 2017 - 2018							<br>
+                                ТОО "Ain Capital"
+                            </div>
+
+                        </div>
+                        <div class="mega-copyright widget-15 [param.main_params.logo_type.css_class] widget-type-mega_copyright editorElement layer-type-widget">
+                            <span style="font-size:10px;" class="copyright"><a target="_blank" href="http://megagroup.kz/" title="Создание сайтов Астана Казахстане" class="copyright">Создание сайтов Астана</a> - megagroup.kz</span>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </footer>
         {% endblock %}

@@ -243,11 +243,8 @@ b, strong, label, th {
     background-color: rgba(255, 255, 255, 0.7) !important; }
 
 #footer {
-  background: #922a8f;
+  background: #ffffff;
   height: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
   color: #999;
   text-align: center; }
   #footer a:hover {

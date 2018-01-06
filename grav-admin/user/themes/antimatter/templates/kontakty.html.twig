@@ -1,0 +1,26 @@
+{% extends 'partials/base.html.twig' %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"  type="text/javascript" ></script>
+
+    <script type="text/javascript" >
+        ymaps.ready(init);
+        let myMap,myPlacemark;
+        function init() {
+            myMap = new ymaps.Map("myMap", {
+                center: [43.22662649999999, 76.93446219999998],
+                zoom: 17
+            });
+            myPlacemark = new ymaps.Placemark([43.22662649999999, 76.93446219999998], {
+                hintContent: 'Aincapital', balloonContent: 'Aincapital'
+            });
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+{% endblock %}
+{% block content %}
+    {{ page.content }}
+    <div class="localmap">
+        <div id="myMap" style="height: 200px"></div>
+    </div>
+{% endblock %}

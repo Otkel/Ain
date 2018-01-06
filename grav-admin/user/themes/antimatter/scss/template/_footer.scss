@@ -1,10 +1,7 @@
 // Footer styling
 #footer {
-	background: #922a8f;
+	background: #ffffff;
 	height: auto;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	@extend .padding-horiz;
 	color: $footer-text;
 	text-align: center;

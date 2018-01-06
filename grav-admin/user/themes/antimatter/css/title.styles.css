@@ -11,7 +11,7 @@ body.noscroll {overflow: hidden !important;}
 .vertical-middle {white-space: nowrap;}
 .vertical-middle>* {white-space: normal;display: inline-block;vertical-align: middle;}
 .vertical-middle::after {height: 100%;width: 0;display: inline-block;vertical-align: middle;content: "";}
-.wrapper {margin: 0 auto;height: auto !important;height: 100%;min-height: 100%;min-height: 100vh;overflow: hidden;max-width: 100%;}
+.wrapper {margin: 0 auto 50px auto;height: auto !important;overflow: hidden;max-width: 100%;}
 .wrapper > * { max-width: 100%; }
 .editorElement .removed+.delimiter, .editorElement .delimiter:first-child {display: none;}
 /* tooltip */
@@ -479,7 +479,7 @@ body { border: none; background: #f8f8f8; -webkit-border-radius: none; -moz-bord
 .news-22 .bx-pager a.active { background: #0099b0;}
 .news-22 .news__footer { box-sizing: border-box; text-align: center;}
 .block-15 .layout_34_id_35 { display: -webkit-flex; display: flex; -webkit-flex-direction: column; -moz-flex-direction: column; flex-direction: column; margin-top: 0; margin-left: auto; margin-right: auto; width: 960px;}
-.block-15 { margin: 0; border: none; position: relative; top: 0; left: 0; width: auto; min-height: 161px; background: transparent; z-index: 2; text-align: left; right: 0; display: block; padding-top: 0.02px; padding-bottom: 50px;}
+.block-15 { margin: 0; border: none; position: relative; top: 0; left: 0; width: auto; min-height: 161px; background: #efe6e6; z-index: 2; text-align: left; right: 0; display: block; padding-top: 0.02px; padding-bottom: 50px;}
 .widget-32 { padding: 0.02px 40px 49px; margin: 0 auto; position: relative; top: 0; left: 0; z-index: 1; width: 960px; max-width: 100%; box-sizing: border-box; min-height: 0; min-width: 0;}
 .blocklist-35 p:first-child { margin-top: 0;}
 .blocklist-35 p:last-child { margin-bottom: 0;}
