@@ -175,17 +175,22 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
         ";
         }
         // line 154
-        echo "        ";
+        echo "        <div style=\"height: auto\">
+
+        </div>
+
+        ";
+        // line 158
         $this->displayBlock('footer', $context, $blocks);
-        // line 276
+        // line 281
         echo "    </div>
     ";
-        // line 277
+        // line 282
         $this->displayBlock('sidebar_navigation', $context, $blocks);
-        // line 284
+        // line 289
         echo "    ";
         $this->displayBlock('bottom', $context, $blocks);
-        // line 297
+        // line 302
         echo "</body>
 </html>
 ";
@@ -379,10 +384,10 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
     {
     }
 
-    // line 154
+    // line 158
     public function block_footer($context, array $blocks = array())
     {
-        // line 155
+        // line 159
         echo "        <footer id=\"footer\">
             <div class=\"wrapper\">
             <div class=\"editorElement layer-type-block ui-droppable block-9\">
@@ -460,27 +465,50 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
 
                             <div class=\"form-26 widget-17 vertical_mode widget-type-form_adaptive editorElement layer-type-widget\">
                                 <div class=\"form__header\"><div class=\"align-elem\">ОСТАЛИСЬ ВОПРОСЫ? МЫ ВСЕГДА ГОТОВЫ ПОМОЧЬ</div></div>\t\t\t\t<div class=\"form__body\" data-api-type=\"form\" data-api-url=\"/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=940405\">
-                                    <form method=\"post\">
-                                        <input type=\"hidden\" name=\"_form_item\" value=\"26\">
-                                        <input type=\"hidden\" name=\"form_id\" value=\"940405\">
-                                        <input type=\"hidden\" name=\"tpl\" value=\"db:title.tpl\">
-                                        <div class=\"form-table\">
-                                            <div class=\"form-tbody\">
-                                                <div class=\"form-item-group group-text\">
-                                                    <div class=\"form-item form-text name\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Ваше имя: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[0]\" id=\"d[0]\" required=\"\"></div></div><div class=\"form-item form-text phone\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Телефон: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[1]\" id=\"d[1]\" required=\"\"></div></div>
-                                                </div>
-                                                <div class=\"form-item-group group-textarea\">
-                                                    <div class=\"form-item form-textarea comments\"><label class=\"form-item__body\"><textarea class=\"wm-input-default\" placeholder=\" Комментарии: \" cols=\"1\" rows=\"1\" name=\"d[2]\" id=\"d[2]\"></textarea></label></div>
-                                                </div>
-                                            </div>
-                                            <div class=\"form-tfoot\">
-                                                <div class=\"form-item-group group-button\">
-                                                    <div class=\"form-submit\"><div class=\"form-item__body\"><button class=\"wm-input-default\" type=\"submit\"><span class=\"align-elem\">Заказать звонок</span></button></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                    ";
+        // line 237
+        echo "                                        ";
+        // line 238
+        echo "                                        ";
+        // line 239
+        echo "                                        ";
+        // line 240
+        echo "                                        ";
+        // line 241
+        echo "                                            ";
+        // line 242
+        echo "                                                ";
+        // line 243
+        echo "                                                    ";
+        // line 244
+        echo "                                                ";
+        // line 245
+        echo "                                                ";
+        // line 246
+        echo "                                                    ";
+        // line 247
+        echo "                                                ";
+        // line 248
+        echo "                                            ";
+        // line 249
+        echo "                                            ";
+        // line 250
+        echo "                                                ";
+        // line 251
+        echo "                                                    ";
+        // line 252
+        echo "                                                ";
+        // line 253
+        echo "                                            ";
+        // line 254
+        echo "                                        ";
+        // line 255
+        echo "                                    ";
+        // line 256
+        echo "                                    ";
+        $this->loadTemplate("forms/form.html.twig", "partials/base.html.twig", 256)->display(array_merge($context, array("form" => call_user_func_array($this->env->getFunction('forms')->getCallable(), array(array("route" => "/contact-form"))))));
+        // line 257
+        echo "                                </div>
                             </div>
                             <script src=\"/shared/misc/calendar.gen.js\" type=\"text/javascript\" language=\"javascript\" charset=\"utf-8\"></script>
 
@@ -506,25 +534,25 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
         ";
     }
 
-    // line 277
+    // line 282
     public function block_sidebar_navigation($context, array $blocks = array())
     {
-        // line 278
+        // line 283
         echo "        <div class=\"sb-slidebar sb-left sb-width-thin\">
             <div id=\"panel\">
             ";
-        // line 280
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 280)->display($context);
-        // line 281
+        // line 285
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 285)->display($context);
+        // line 286
         echo "            </div>
         </div>
     ";
     }
 
-    // line 284
+    // line 289
     public function block_bottom($context, array $blocks = array())
     {
-        // line 285
+        // line 290
         echo "        ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -553,7 +581,7 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
 
     public function getDebugInfo()
     {
-        return array (  528 => 285,  525 => 284,  519 => 281,  517 => 280,  513 => 278,  510 => 277,  386 => 155,  383 => 154,  378 => 138,  373 => 139,  371 => 138,  366 => 137,  363 => 136,  358 => 134,  354 => 128,  351 => 127,  348 => 126,  343 => 122,  336 => 129,  333 => 126,  330 => 125,  327 => 124,  324 => 123,  322 => 122,  318 => 120,  315 => 119,  311 => 38,  308 => 37,  305 => 36,  302 => 35,  299 => 34,  296 => 33,  292 => 30,  289 => 29,  286 => 28,  283 => 27,  280 => 26,  277 => 25,  274 => 24,  271 => 23,  268 => 22,  265 => 21,  262 => 20,  259 => 19,  256 => 18,  253 => 17,  250 => 16,  247 => 15,  244 => 14,  241 => 13,  233 => 39,  231 => 33,  225 => 31,  223 => 13,  218 => 11,  214 => 10,  211 => 9,  209 => 8,  201 => 7,  198 => 6,  195 => 5,  189 => 297,  186 => 284,  184 => 277,  181 => 276,  178 => 154,  172 => 152,  169 => 151,  166 => 150,  160 => 148,  157 => 147,  154 => 146,  148 => 144,  145 => 143,  143 => 142,  140 => 141,  138 => 136,  135 => 135,  133 => 134,  130 => 133,  128 => 119,  59 => 53,  46 => 43,  43 => 42,  41 => 5,  36 => 3,  33 => 2,  31 => 1,);
+        return array (  556 => 290,  553 => 289,  547 => 286,  545 => 285,  541 => 283,  538 => 282,  511 => 257,  508 => 256,  506 => 255,  504 => 254,  502 => 253,  500 => 252,  498 => 251,  496 => 250,  494 => 249,  492 => 248,  490 => 247,  488 => 246,  486 => 245,  484 => 244,  482 => 243,  480 => 242,  478 => 241,  476 => 240,  474 => 239,  472 => 238,  470 => 237,  391 => 159,  388 => 158,  383 => 138,  378 => 139,  376 => 138,  371 => 137,  368 => 136,  363 => 134,  359 => 128,  356 => 127,  353 => 126,  348 => 122,  341 => 129,  338 => 126,  335 => 125,  332 => 124,  329 => 123,  327 => 122,  323 => 120,  320 => 119,  316 => 38,  313 => 37,  310 => 36,  307 => 35,  304 => 34,  301 => 33,  297 => 30,  294 => 29,  291 => 28,  288 => 27,  285 => 26,  282 => 25,  279 => 24,  276 => 23,  273 => 22,  270 => 21,  267 => 20,  264 => 19,  261 => 18,  258 => 17,  255 => 16,  252 => 15,  249 => 14,  246 => 13,  238 => 39,  236 => 33,  230 => 31,  228 => 13,  223 => 11,  219 => 10,  216 => 9,  214 => 8,  206 => 7,  203 => 6,  200 => 5,  194 => 302,  191 => 289,  189 => 282,  186 => 281,  184 => 158,  178 => 154,  172 => 152,  169 => 151,  166 => 150,  160 => 148,  157 => 147,  154 => 146,  148 => 144,  145 => 143,  143 => 142,  140 => 141,  138 => 136,  135 => 135,  133 => 134,  130 => 133,  128 => 119,  59 => 53,  46 => 43,  43 => 42,  41 => 5,  36 => 3,  33 => 2,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -719,6 +747,10 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
         {% if partners_thumbs is not empty %}
             {{ partners_thumbs }}
         {% endif %}
+        <div style=\"height: auto\">
+
+        </div>
+
         {% block footer %}
         <footer id=\"footer\">
             <div class=\"wrapper\">
@@ -797,26 +829,27 @@ class __TwigTemplate_3e8412eba7bebdb47615c6f262733087764a7379a01ca873eb10615820d
 
                             <div class=\"form-26 widget-17 vertical_mode widget-type-form_adaptive editorElement layer-type-widget\">
                                 <div class=\"form__header\"><div class=\"align-elem\">ОСТАЛИСЬ ВОПРОСЫ? МЫ ВСЕГДА ГОТОВЫ ПОМОЧЬ</div></div>\t\t\t\t<div class=\"form__body\" data-api-type=\"form\" data-api-url=\"/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=940405\">
-                                    <form method=\"post\">
-                                        <input type=\"hidden\" name=\"_form_item\" value=\"26\">
-                                        <input type=\"hidden\" name=\"form_id\" value=\"940405\">
-                                        <input type=\"hidden\" name=\"tpl\" value=\"db:title.tpl\">
-                                        <div class=\"form-table\">
-                                            <div class=\"form-tbody\">
-                                                <div class=\"form-item-group group-text\">
-                                                    <div class=\"form-item form-text name\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Ваше имя: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[0]\" id=\"d[0]\" required=\"\"></div></div><div class=\"form-item form-text phone\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Телефон: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[1]\" id=\"d[1]\" required=\"\"></div></div>
-                                                </div>
-                                                <div class=\"form-item-group group-textarea\">
-                                                    <div class=\"form-item form-textarea comments\"><label class=\"form-item__body\"><textarea class=\"wm-input-default\" placeholder=\" Комментарии: \" cols=\"1\" rows=\"1\" name=\"d[2]\" id=\"d[2]\"></textarea></label></div>
-                                                </div>
-                                            </div>
-                                            <div class=\"form-tfoot\">
-                                                <div class=\"form-item-group group-button\">
-                                                    <div class=\"form-submit\"><div class=\"form-item__body\"><button class=\"wm-input-default\" type=\"submit\"><span class=\"align-elem\">Заказать звонок</span></button></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    {#<form method=\"post\">#}
+                                        {#<input type=\"hidden\" name=\"_form_item\" value=\"26\">#}
+                                        {#<input type=\"hidden\" name=\"form_id\" value=\"940405\">#}
+                                        {#<input type=\"hidden\" name=\"tpl\" value=\"db:title.tpl\">#}
+                                        {#<div class=\"form-table\">#}
+                                            {#<div class=\"form-tbody\">#}
+                                                {#<div class=\"form-item-group group-text\">#}
+                                                    {#<div class=\"form-item form-text name\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Ваше имя: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[0]\" id=\"d[0]\" required=\"\"></div></div><div class=\"form-item form-text phone\"><div class=\"form-item__body\"><input class=\"wm-input-default\" placeholder=\"* Телефон: \" type=\"text\" size=\"1\" maxlength=\"100\" value=\"\" name=\"d[1]\" id=\"d[1]\" required=\"\"></div></div>#}
+                                                {#</div>#}
+                                                {#<div class=\"form-item-group group-textarea\">#}
+                                                    {#<div class=\"form-item form-textarea comments\"><label class=\"form-item__body\"><textarea class=\"wm-input-default\" placeholder=\" Комментарии: \" cols=\"1\" rows=\"1\" name=\"d[2]\" id=\"d[2]\"></textarea></label></div>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#<div class=\"form-tfoot\">#}
+                                                {#<div class=\"form-item-group group-button\">#}
+                                                    {#<div class=\"form-submit\"><div class=\"form-item__body\"><button class=\"wm-input-default\" type=\"submit\"><span class=\"align-elem\">Заказать звонок</span></button></div></div>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</form>#}
+                                    {% include \"forms/form.html.twig\" with { form: forms({route:'/contact-form'}) } %}
                                 </div>
                             </div>
                             <script src=\"/shared/misc/calendar.gen.js\" type=\"text/javascript\" language=\"javascript\" charset=\"utf-8\"></script>

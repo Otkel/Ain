@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1515259712,
-    'checksum' => 'b1469e00ae70d1c17436aaa4291be0dd',
+    'timestamp' => 1515428515,
+    'checksum' => '25c900cb6500546784c70c13c1b306ee',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1514376012
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1515415127
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -23,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1515259712
+                'modified' => 1515428502
             ]
         ],
         'system/config' => [
@@ -145,18 +149,18 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'from_name' => NULL,
-                'to' => NULL,
-                'to_name' => NULL,
+                'from' => 'aincapital@yandex.ru',
+                'from_name' => 'Aincapital',
+                'to' => 'hello@spaceduck.kz',
+                'to_name' => 'Spaceduck',
                 'mailer' => [
-                    'engine' => 'sendmail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'server' => 'smtp.yandex.com',
+                        'port' => 465,
+                        'encryption' => 'ssl',
+                        'user' => 'aincapital',
+                        'password' => 'panfilov28'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail -bs'

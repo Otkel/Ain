@@ -151,6 +151,10 @@
         {% if partners_thumbs is not empty %}
             {{ partners_thumbs }}
         {% endif %}
+        <div style="height: auto">
+
+        </div>
+
         {% block footer %}
         <footer id="footer">
             <div class="wrapper">
@@ -229,26 +233,27 @@
 
                             <div class="form-26 widget-17 vertical_mode widget-type-form_adaptive editorElement layer-type-widget">
                                 <div class="form__header"><div class="align-elem">ОСТАЛИСЬ ВОПРОСЫ? МЫ ВСЕГДА ГОТОВЫ ПОМОЧЬ</div></div>				<div class="form__body" data-api-type="form" data-api-url="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=940405">
-                                    <form method="post">
-                                        <input type="hidden" name="_form_item" value="26">
-                                        <input type="hidden" name="form_id" value="940405">
-                                        <input type="hidden" name="tpl" value="db:title.tpl">
-                                        <div class="form-table">
-                                            <div class="form-tbody">
-                                                <div class="form-item-group group-text">
-                                                    <div class="form-item form-text name"><div class="form-item__body"><input class="wm-input-default" placeholder="* Ваше имя: " type="text" size="1" maxlength="100" value="" name="d[0]" id="d[0]" required=""></div></div><div class="form-item form-text phone"><div class="form-item__body"><input class="wm-input-default" placeholder="* Телефон: " type="text" size="1" maxlength="100" value="" name="d[1]" id="d[1]" required=""></div></div>
-                                                </div>
-                                                <div class="form-item-group group-textarea">
-                                                    <div class="form-item form-textarea comments"><label class="form-item__body"><textarea class="wm-input-default" placeholder=" Комментарии: " cols="1" rows="1" name="d[2]" id="d[2]"></textarea></label></div>
-                                                </div>
-                                            </div>
-                                            <div class="form-tfoot">
-                                                <div class="form-item-group group-button">
-                                                    <div class="form-submit"><div class="form-item__body"><button class="wm-input-default" type="submit"><span class="align-elem">Заказать звонок</span></button></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    {#<form method="post">#}
+                                        {#<input type="hidden" name="_form_item" value="26">#}
+                                        {#<input type="hidden" name="form_id" value="940405">#}
+                                        {#<input type="hidden" name="tpl" value="db:title.tpl">#}
+                                        {#<div class="form-table">#}
+                                            {#<div class="form-tbody">#}
+                                                {#<div class="form-item-group group-text">#}
+                                                    {#<div class="form-item form-text name"><div class="form-item__body"><input class="wm-input-default" placeholder="* Ваше имя: " type="text" size="1" maxlength="100" value="" name="d[0]" id="d[0]" required=""></div></div><div class="form-item form-text phone"><div class="form-item__body"><input class="wm-input-default" placeholder="* Телефон: " type="text" size="1" maxlength="100" value="" name="d[1]" id="d[1]" required=""></div></div>#}
+                                                {#</div>#}
+                                                {#<div class="form-item-group group-textarea">#}
+                                                    {#<div class="form-item form-textarea comments"><label class="form-item__body"><textarea class="wm-input-default" placeholder=" Комментарии: " cols="1" rows="1" name="d[2]" id="d[2]"></textarea></label></div>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                            {#<div class="form-tfoot">#}
+                                                {#<div class="form-item-group group-button">#}
+                                                    {#<div class="form-submit"><div class="form-item__body"><button class="wm-input-default" type="submit"><span class="align-elem">Заказать звонок</span></button></div></div>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</form>#}
+                                    {% include "forms/form.html.twig" with { form: forms({route:'/contact-form'}) } %}
                                 </div>
                             </div>
                             <script src="/shared/misc/calendar.gen.js" type="text/javascript" language="javascript" charset="utf-8"></script>
